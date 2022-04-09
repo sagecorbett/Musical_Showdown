@@ -1,0 +1,75 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	line-height: 1.7;
+}
+
+// The h1 on the home page
+.title {
+    color: $color-yellow;
+    font-size: 5rem;
+}
+
+.paragraph {
+	font-size: $default-font-size;
+	&--white {
+		color: $color-white
+	}
+}
+
+@font-face {
+	font-family: 'TheMeshroom';
+	src: url('./TheMeshroom-3zaXL.ttf');
+	font-style: normal;
+	font-weight: 100;
+}
+
+@font-face {
+	font-family: 'TheMacksen';
+	src: url('./TheMacksen-ZV24x.ttf');
+	font-style: normal;
+	font-weight: 100;
+}
+
+@font-face {
+	font-family: 'Ceuphoria';
+	src: url('./CeuphoriaDemoRegular-mLVn5.ttf');
+	font-style: normal;
+	font-weight: 100;
+}
+
+// Anything with this class will have the special 60s style font TheMeshroom
+.mesh {
+	font-family: 'TheMeshroom';
+}
+
+// Anything with this class will have the special 60s style font TheMacksen
+.mack {
+	font-family: 'TheMacksen';
+}
+
+// Anything with this class will have the special 60s style font Ceuphoria
+.ceu {
+	font-family: 'Ceuphoria';
+}
+
+
+.text-border {
+	-webkit-text-stroke: black 1px;
+}
+
+.heading-secondary {
+	font-size: 2.5rem;
+	&--pink {
+		color: $color-pink
+	}
+
+	&--white {
+		color: $color-white
+	}
+}
+
+// custom class to enlarge the text for the btns
+.text-medium {
+	font-size: 3.5rem;
+}

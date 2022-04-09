@@ -1,0 +1,66 @@
+.btn {
+    transition: all 0.5s;
+	&, // need the & so that other elements will be styled like anchor tags too ( Chat page )
+    &:link,
+    &:visited {
+		text-decoration: none;
+		font-size: 1.4rem;
+		border-radius: 5px; // to round the sides
+		display: inline-block;
+		padding: 1rem;
+		cursor: pointer;
+	}
+
+    &--pink {
+        border: $color-pink 2px solid;
+        color: $color-pink;
+        background-color: $color-pink;
+
+        &--solid {
+            color: $color-white;
+
+            &:hover {
+                color: $color-blue;
+                border: $color-blue 2px solid;    
+            }
+        }
+
+        &--transparent {
+            background-color: transparent;
+
+            &:hover {
+                background-color: $color-pink;
+                border: $color-pink 2px solid;
+                color: $color-white;
+            }
+        }
+
+
+
+        &--black {
+            color: $color-black;
+        }
+    }
+
+    &--blue {
+        border: $color-blue 2px solid;
+        background-color: transparent;
+        color: $color-blue;
+
+        &:hover {
+            background-color: $color-blue;
+            color: $color-white;
+        }
+    }
+
+    &--black {
+        border: $color-pink 2px solid;
+        color: $color-pink;
+        background-color: $color-black;
+
+        &:hover {
+            color: $color-white;
+            background-color: $color-pink;
+        }
+    }
+}

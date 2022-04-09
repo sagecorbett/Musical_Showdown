@@ -1,0 +1,21 @@
+// Abstracts
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+
+// Base styles
+@import 'base/base';
+@import 'base/utilities';
+@import 'base/typography';
+
+// Components 
+@import 'components/button';
+@import 'components/input';
+@import 'components/recording';
+
+// Layout
+// @import 'layout/navbar';
+// @import 'layout/footer';
+
+// Pages
+@import 'pages/home';
+@import 'pages/melody'

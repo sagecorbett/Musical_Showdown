@@ -1,0 +1,30 @@
+.input {
+    background-color: transparent;
+    border: 0;
+    outline: none;
+    font-size: $default-font-size;
+    color: $color-white;
+    margin: 0 1rem 0 1rem;
+
+    &--blue {
+        border-bottom: solid 2px $color-blue;
+    }
+
+    &--pink {
+        border-bottom: solid 2px $color-pink;
+    }
+
+    &--number {
+        width: 4rem;
+        font-size: 2.5rem;
+        // remove default arrows in firefox
+        -moz-appearance: textfield;
+
+        // remove default arrows in number input Chrome Safari Edge Opera
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+    }
+}

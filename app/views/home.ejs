@@ -1,0 +1,42 @@
+<%- include('./partials/header.ejs') %>
+<main class="home">
+        <article class="home__about u-margin-bottom-sm">
+            <h2 class="home__about__header mesh text-border heading-secondary heading-secondary--pink">About</h2>
+            <p class="home__about__description paragraph">
+                Hey I'm Sage and this is my side project Musical Showdown an ear training app that includes the user
+                playing a given melody back via their own instrument and computer microphone. This is currently in an MVP
+                stage but I hope to add more to it as I find time. I have some pretty big plans for some 
+                upcoming features planned and also plans to port this over to the app store soon. If you have
+                feature requests or suggestions you can contact me here: 
+            </p>
+        </article>
+        <article class="home__about u-margin-bottom-sm">
+            <h2 class="home__about__header mesh text-border heading-secondary heading-secondary--pink">How To Use</h2>
+            <p class="home__about__description paragraph">
+                Musical Showdown will ask you for a number of notes to be created in a melody below. It will
+                then create a melody file from a random scale and bring you to a page where you can play it. Once 
+                you think you have the correct melody click the record button and play it on your instrument. Make
+                sure you are in a quiet room and that your instrument is in tune. The key that you play your melody 
+                back in does not matter. You just have to play the correct intervals!
+            </p>
+        </article>
+
+    <form class="home__form u-center-text" action="/solo">
+        <label for="notes" class="home__form__label paragraph">
+            How Many Notes? (Between 2 - 20)
+            <input 
+                class="home__form__input input input--pink input--number" 
+                type="number" id="notes" 
+                name="notes"
+            >
+        </label>
+        <button 
+            class="home__form__submit paragraph btn btn--pink btn--pink--solid mack"
+            type="submit">
+            Get Melody
+        </button>
+    </form>
+</main>
+
+
+<%- include('./partials/footer.ejs') %>

@@ -1,0 +1,226 @@
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet Portrait
+900 - 1200px:    Tablet Landscape
+[1200 - 1800] is where our normal styles apply
+1800+:           Big Desktop
+$breakpoint argument choices 
+- phone
+- tab-port
+- tab-land
+- big-desktop
+1em = 16px
+*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+ul {
+  list-style-position: inside;
+}
+
+.u-center-text {
+  text-align: center;
+}
+
+.u-margin-bottom-sm {
+  margin-bottom: 2rem;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.title {
+  color: #f8ca58;
+  font-size: 5rem;
+}
+
+.paragraph {
+  font-size: 2rem;
+}
+.paragraph--white {
+  color: #fff;
+}
+
+@font-face {
+  font-family: "TheMeshroom";
+  src: url("./TheMeshroom-3zaXL.ttf");
+  font-style: normal;
+  font-weight: 100;
+}
+@font-face {
+  font-family: "TheMacksen";
+  src: url("./TheMacksen-ZV24x.ttf");
+  font-style: normal;
+  font-weight: 100;
+}
+@font-face {
+  font-family: "Ceuphoria";
+  src: url("./CeuphoriaDemoRegular-mLVn5.ttf");
+  font-style: normal;
+  font-weight: 100;
+}
+.mesh {
+  font-family: "TheMeshroom";
+}
+
+.mack {
+  font-family: "TheMacksen";
+}
+
+.ceu {
+  font-family: "Ceuphoria";
+}
+
+.text-border {
+  -webkit-text-stroke: black 1px;
+}
+
+.heading-secondary {
+  font-size: 2.5rem;
+}
+.heading-secondary--pink {
+  color: #fa6aad;
+}
+.heading-secondary--white {
+  color: #fff;
+}
+
+.text-medium {
+  font-size: 3.5rem;
+}
+
+.btn {
+  transition: all 0.5s;
+}
+.btn, .btn:link, .btn:visited {
+  text-decoration: none;
+  font-size: 1.4rem;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 1rem;
+  cursor: pointer;
+}
+.btn--pink {
+  border: #fa6aad 2px solid;
+  color: #fa6aad;
+  background-color: #fa6aad;
+}
+.btn--pink--solid {
+  color: #fff;
+}
+.btn--pink--solid:hover {
+  color: #36659a;
+  border: #36659a 2px solid;
+}
+.btn--pink--transparent {
+  background-color: transparent;
+}
+.btn--pink--transparent:hover {
+  background-color: #fa6aad;
+  border: #fa6aad 2px solid;
+  color: #fff;
+}
+.btn--pink--black {
+  color: #000;
+}
+.btn--blue {
+  border: #36659a 2px solid;
+  background-color: transparent;
+  color: #36659a;
+}
+.btn--blue:hover {
+  background-color: #36659a;
+  color: #fff;
+}
+.btn--black {
+  border: #fa6aad 2px solid;
+  color: #fa6aad;
+  background-color: #000;
+}
+.btn--black:hover {
+  color: #fff;
+  background-color: #fa6aad;
+}
+
+.input {
+  background-color: transparent;
+  border: 0;
+  outline: none;
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 1rem 0 1rem;
+}
+.input--blue {
+  border-bottom: solid 2px #36659a;
+}
+.input--pink {
+  border-bottom: solid 2px #fa6aad;
+}
+.input--number {
+  width: 4rem;
+  font-size: 2.5rem;
+  -moz-appearance: textfield;
+}
+.input--number::-webkit-outer-spin-button, .input--number::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.home {
+  max-width: 80%;
+  background-color: rgba(117, 208, 213, 0.6);
+  border: solid 2px #000;
+  border-radius: 7px;
+  margin: auto;
+  padding: 2rem;
+}
+.home__about__header {
+  color: #fa6aad;
+}
+
+.melody {
+  max-width: 80%;
+  background-color: rgba(117, 208, 213, 0.6);
+  border: solid 2px #000;
+  border-radius: 7px;
+  margin: auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+/*# sourceMappingURL=main.css.map */

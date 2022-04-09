@@ -1,0 +1,50 @@
+<%- include('./partials/header.ejs') %>
+<% console.log('notes is: ', notes) %>
+
+
+<main class="melody">
+    <!-- Div containing the notes in created melody -->
+    <div id="notes" data-notes="<%= notes %>"></div>
+    <article class="melody__midi-player" >
+        <h2 class="mesh text-border heading-secondary heading-secondary--pink">Your Randomly Created Melody:</p>
+        <!-- HTML midi player -->
+        <midi-player 
+            src="melody/<%= filename %>" 
+            sound-font 
+            visualizer="#myVisualizer">
+        </midi-player>
+    </article>
+    
+    <!-- Recording user melody -->
+    <section class="melody__recorder">
+        <h2 class="mesh text-border heading-secondary heading-secondary--pink">Recording: <span class="recording"></span></h2>
+        
+        <div class="melody__recorder__controls">
+            <button 
+            id="record"
+            class="btn btn--black mack paragraph">
+            Record Melody
+        </button>
+        <button 
+        id="stop"
+        class="btn btn--blue mack paragraph">
+        Stop
+        </button>
+        <!-- Submits an array of notes detected to the server -->
+        <button 
+        id="submit" 
+        class="btn btn--pink btn--pink--solid mack paragraph">
+        Submit
+    </button>
+    </div>
+    <div class="melody__recorder__note-display">
+        <p class="paragraph mesh heading-secondary--pink heading-secondary text-border">Note detected: <span id="note_display" class="paragraph heading-secondary--white mesh"></span></p>
+        <p class="paragraph mesh heading-secondary--pink heading-secondary text-border">Your Melody: <span id="melody_display" class="paragraph heading-secondary--white mesh"></span></p>
+    </div>
+</section>
+</main>
+
+
+<script src="./scripts/pitchfinder.js"></script>
+
+<%- include('./partials/footer.ejs') %>

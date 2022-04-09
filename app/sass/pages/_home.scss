@@ -1,0 +1,41 @@
+
+// solution one
+.home {
+    max-width: 80%;
+    background-color: rgba($color-light-blue, 0.6);
+    border: solid 2px $color-black;
+    border-radius: 7px;
+    margin: auto;
+    padding: 2rem;
+
+    &__about {
+        &__header {
+            color: $color-pink
+        }
+    }
+}
+
+// color solution 2
+// .home {
+//     max-width: 80%;
+//     background-color: rgba($color-pink, 0.9);;
+//     border: solid 5px $color-blue;
+//     border-radius: 7px;
+//     margin: auto;
+//     padding: 3.5rem;
+
+//     &__about {
+//         &__header {
+//             color: $color-yellow
+//         }
+//     }
+
+//     &__form {
+//         display: flex;
+//         align-items: flex-end;
+//         margin: auto;
+//         &__input {
+            
+//         }
+//     }
+// }
