@@ -95,9 +95,15 @@
           // the top right edge
           ctx.closePath();
           
+          // fill diamonds color
           ctx.fillStyle = color;
           ctx.fill();
           ctx.restore();
+
+          // add black border to the diamonds
+          ctx.lineWidth = 1;
+          ctx.strokeStyle = "black";
+          ctx.stroke();
       }
 
       // Create growing and shrinking effect

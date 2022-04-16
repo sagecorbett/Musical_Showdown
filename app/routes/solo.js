@@ -5,11 +5,12 @@ const { TonalDifferences, checkIfTonalDifferencesMatch } = require('../scripts/T
 
 router.get('/', getSolo)
 
-router.post('/', (req, res) => {
+router.post('/', async (req, res) => {
     console.log('post made: ', req.body)
     const { melodyNotes, userNotes } = req.body
-    const tonalDifferences = TonalDifferences(melodyNotes, userNotes)
-    const match = checkIfTonalDifferencesMatch(tonalDifferences.computedTonalDifferences, tonalDifferences.userTonalDifferences)
+
+    const tonalDifferences = await TonalDifferences(melodyNotes, userNotes)
+    // const match = checkIfTonalDifferencesMatch(tonalDifferences.computedTonalDifferences, tonalDifferences.userTonalDifferences)
     // res.send({
     //     message: match
     // }).status(200)
